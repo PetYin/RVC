@@ -51,7 +51,6 @@ def load_audio(file, sr):
     return np.frombuffer(out, np.float32).flatten()
 
 
-
 def clean_path(path_str):
     if platform.system() == "Windows":
         path_str = path_str.replace("/", "\\")
